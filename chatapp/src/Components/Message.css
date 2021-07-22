@@ -1,0 +1,38 @@
+.message-received {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #ffffff;
+  font-weight: 500;
+  width: fit-content;
+  max-width: 260px;
+  border-radius: 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px 10px 10px 0px;
+  margin-bottom: 25px;
+  font-size: 19px;
+}
+
+.message-sent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  width: fit-content;
+  max-width: 260px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px 10px 0px 10px;
+  background-color: #445dfa;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 25px;
+  font-size: 19px;
+}
+
+.message-time {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+  margin-top: 3px;
+  font-weight: 300;
+}

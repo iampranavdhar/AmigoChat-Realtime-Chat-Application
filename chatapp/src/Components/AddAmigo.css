@@ -1,0 +1,91 @@
+.add-amigo-open {
+  width: 300px;
+  height: 300px;
+  z-index: 5000;
+  border-radius: 15px;
+  flex-direction: column;
+  background-color: rgb(245, 241, 237);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+
+.add-amigo-close {
+  display: none;
+}
+
+.close-div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+}
+
+.close-div span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-symbol {
+  font-size: 15px;
+  font-weight: 600;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+.add-amigo-img{
+  height: 100px;
+  margin: 5px 0;
+}
+
+.add-amigo-open form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.add-amigo-open input {
+  padding: 10px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background-color: white;
+}
+
+.add-amigo-open button {
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  background-color: #316af3;
+  cursor: pointer;
+}
+
+.add-amigo-open button:hover {
+  background-color: white;
+  color: #316af3;
+  border: 1px solid #316af3;
+  transition: all ease 0.5s;
+}

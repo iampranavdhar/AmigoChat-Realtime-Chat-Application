@@ -1,0 +1,73 @@
+.home {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #316af3;
+  position: relative;
+}
+
+.home-components {
+  display: flex;
+  height: 90vh;
+  width: 80vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #eae9ed;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+.menu-open{
+  position: absolute;
+  z-index: 1000;
+  top: 0.5%;
+  left: 0%;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.menu-close{
+  position: absolute;
+  left: 75%;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+.add-chatroom-icon {
+  position: absolute;
+  top: 6%;
+  left: 85%;
+  z-index: 2000;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-close {
+    display: none;
+  }
+  .menu-open {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    overflow: hidden;
+  }
+  .home-components {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+  }
+  .add-chatroom-icon {
+    position: absolute;
+    top: 1%;
+    left: 85%;
+  }
+}
