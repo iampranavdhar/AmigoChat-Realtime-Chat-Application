@@ -30,7 +30,7 @@ Show some ❤️ and 🌟 the repo to support the project
 
 ## Demo 🤩
 
-Live - Link <br/>
+Live - [AmigoChat](https://naughty-dubinsky-9a9ca1.netlify.app/) <br/>
 Video Demo - Youtube Link
 
 ## Setup 🔥
