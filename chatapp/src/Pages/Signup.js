@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
-import "./Signup.css";
+import "./Signin-up.css";
+import { CircularProgress } from "@material-ui/core";
 
 function Signup() {
 
@@ -9,14 +10,15 @@ function Signup() {
   const [password, setPassword] = useState();
   const [username, setUsername] = useState();
   const [photo, setPhoto] = useState("");
+  const [error,setError] = useState("");
+  const [isLoading,setIsLoading] = useState(false)
   const history = useHistory();
 
   const API_URL = process.env.REACT_APP_API_URL
 
-  console.log(API_URL)
-
   const handleForm = async (e) => {
     e.preventDefault();
+    setIsLoading(true)
     const config = {
       headers: {
         "Content-Type": "multipart/form-data",
@@ -36,7 +38,9 @@ function Signup() {
       history.push("/signin");
     } catch (err) {
       console.log(err);
+      setError("Username Already Exist")
     }
+    setIsLoading(false)
   };
 
   return (
@@ -45,6 +49,7 @@ function Signup() {
         <form onSubmit={handleForm}>
           <h2 className="signup-title"> Register </h2>
           <p className="line"></p>
+          <div className="error-message"><p>{error}</p></div>
           <div className="signup-fields">
             <label htmlFor="username"> {" "} <b>Username</b></label>
             <input className="signup-textbox" type="text" placeholder="Enter Username" name="username" required onChange={(e) => { setUsername(e.target.value); }} />
@@ -55,7 +60,7 @@ function Signup() {
             <label><b>Image(You can add Image later)</b></label>
             <input className="file-input" type="file" accept=".png, .jpg, .jpeg, .gif" name="photo" onChange={(e) => { setPhoto(e.target.files[0]); }} />
           </div>
-          <button className="signup-button">Sign Up</button>
+          <button className="signup-button" disabled={isLoading}>{isLoading ?<CircularProgress color="#ffffff" size="18px"/> : "Sign Up"}</button>
         </form>
         <div className="signup-option">
           <p className="signup-question">

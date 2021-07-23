@@ -1,4 +1,4 @@
-.signin-container {
+.signin-container,.signup-container {
   height: 100vh;
   width: 100vw;
   background-color: #316af3;
@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 
-.signin-card {
+.signin-card, .signup-card{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -29,13 +29,13 @@ form {
   padding: 30px;
 }
 
-.signin-title {
+.signin-title, .signup-title{
   text-align: center;
   font-weight: bold;
   margin: 0;
 }
 
-.signup-option {
+.signup-option, .signup-option {
   background-color: rgb(69, 69, 185, 0.2);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -49,21 +49,26 @@ form {
   margin: 25px 0;
 }
 
-.signin-fields {
+.error-message{
+  color: red;
+  font-weight: 600;
+}
+
+.signin-fields, .signup-fields{
   display: flex;
   flex-direction: column;
 }
 
-.signin-fields label {
+.signin-fields label, .signup-fields label {
   color: rgb(170 166 166);
   text-align: left;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
-.signin-textbox {
+.signin-textbox, .signup-textbox{
   padding: 15px 20px;
-  margin-top: 8px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
@@ -71,12 +76,11 @@ form {
   font-size: 20px;
 }
 
-.signin-button {
+.signin-button,.signup-button {
   background-color: rgb(69, 69, 185);
   color: white;
   padding: 18px 20px;
   margin-top: 25px;
-  margin-bottom: 20px;
   margin-left: auto !important;
   margin-left: auto !important;
   width: 100%;
@@ -86,6 +90,8 @@ form {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .forget-pass {
@@ -98,4 +104,40 @@ form {
   font-weight: bold;
   margin-top: 15px !important;
   padding: 15px;
+}
+
+
+/*input file*/
+.file-input {
+  color: transparent;
+  margin-bottom:0!important;
+}
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.file-input::before {
+  content: "Upload Profile Pic";
+  color: #fff;
+  display: inline-block;
+  background: #fa0261;
+  padding: 10px 22px;
+  outline: none;
+  width: fit-content;
+  margin: 10px auto 10px auto;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.file-input:focus {
+  outline: none !important;
+}
+
+.file-input:active::before {
+  transform: scale(0.9) translate(0px, 2px);
+  box-shadow: inset 4px 4px 5px 0px rgba(0, 0, 0, 0.2);
 }

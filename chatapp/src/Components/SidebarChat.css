@@ -28,6 +28,8 @@
 .sidebarchat-info-name{
     font-size: 22px;
     font-weight: 500;
+    position: absolute;
+    left: 80px;
 }
 
 .amigo-profilepic{
