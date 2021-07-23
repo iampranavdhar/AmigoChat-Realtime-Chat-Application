@@ -22,7 +22,7 @@ Show some ❤️ and 🌟 the repo to support the project
 - SignUp
 - SignIn
 - Adding a Profile Pic[All formats including Gif]
-- Adding Friends with the help of Username
+- Adding Friends based on username Username
 - Showing Online Friends
 - Chatting with the friends along with emoji's in realtime 
 - Updating the username and profile pic
