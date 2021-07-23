@@ -2,20 +2,29 @@
 
 AmigoChat is a completely responsive real-time chat application built on MERN Stack and Socket.io
 
-Screen Shot of Home page with One or Two chats
+Live - [AmigoChat](https://naughty-dubinsky-9a9ca1.netlify.app/) <br/>
+
+### Video Demo
+
+![try2](https://user-images.githubusercontent.com/73348574/126811719-beac6a7d-8084-4a7d-8e2d-9978889caaf1.gif)
+
+
+### Screenshots Of Mobile View
+
+![1](https://user-images.githubusercontent.com/73348574/126811022-28b1e572-0bbd-40ed-a423-dca4bb57c4d6.png)
+![2](https://user-images.githubusercontent.com/73348574/126811028-de3f3169-e4b9-4013-9e31-6e64fb0b6713.png)
 
 Show some ❤️ and 🌟 the repo to support the project
 
 ## Index ✏️
 
 1. [Features](#features-of-amigoChat-🚀)
-2. [Demo](#demo-🤩)
-3. [Setup](#setup-🔥)
-4. [Technologies](#technologies-🛠)
-5. [References](#references-💻)
-6. [Author](#author-📝)
-7. [Connect Me On](#connect-me-on-🌍)
-8. [License](#license-🏆)
+2. [Setup](#setup-🔥)
+3. [Technologies](#technologies-🛠)
+4. [References](#references-💻)
+5. [Author](#author-📝)
+6. [Connect Me On](#connect-me-on-🌍)
+7. [License](#license-🏆)
 
 ## Features Of AmigoChat 🚀
 
@@ -27,11 +36,6 @@ Show some ❤️ and 🌟 the repo to support the project
 - Chatting with the friends along with emoji's in realtime 
 - Updating the username and profile pic
 - Logout
-
-## Demo 🤩
-
-Live - [AmigoChat](https://naughty-dubinsky-9a9ca1.netlify.app/) <br/>
-Video Demo - Youtube Link
 
 ## Setup 🔥
 
