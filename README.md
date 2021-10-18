@@ -91,3 +91,5 @@ Show some ❤️ and 🌟 the repo to support the project
 [![linkedin badge](https://img.shields.io/badge/linkedin-Pranavdhar-0077b5?style=social&logo=linkedin)](https://in.linkedin.com/in/sai-pranavdhar-reddy-nalamalapu-038104206)
 
 ## License 🏆
+
+This repository is licensed under MIT License. Find [LICENSE](LICENSE) to know more.
