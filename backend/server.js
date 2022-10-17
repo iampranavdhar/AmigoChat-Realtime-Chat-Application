@@ -21,7 +21,6 @@ app.use(cors());
 
 
 /* Socket.io Setup */
-
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
@@ -46,7 +45,7 @@ const getUser = (userId) => {
 
 io.on("connection", (socket) => {
   //when connect
-  console.log("a user connected.");
+  console.log("One User Got Connected.");
 
   //take userId and socketId from user
   socket.on("addUser", (userId) => {
@@ -65,14 +64,13 @@ io.on("connection", (socket) => {
 
   //when disconnect
   socket.on("disconnect", () => {
-    console.log("a user disconnected!");
+    console.log("One User Got Disconnected!");
     removeUser(socket.id);
     io.emit("getUsers", users);
   });
 });
 
 /* API Routes -> The first part is the default path for all the requests in that users.js file there we have to continue from this path */
-
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/chatrooms", chatroomRoutes);
