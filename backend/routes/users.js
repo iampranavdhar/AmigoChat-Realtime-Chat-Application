@@ -40,6 +40,7 @@ router.put("/:id", upload.single("photo"), async (req, res) => {
     });
     res.status(200).json("Data Updated Succesfully");
   } catch (err) {
+    console.log(err)
     return res.status(500).json(err);
   }
 });
@@ -66,6 +67,7 @@ router.get("/:id", async (req, res) => {
       .status(200)
       .json(user); /* Removing uneccesary fields for the response JSON */
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
@@ -76,6 +78,7 @@ router.get("/", async (req, res) => {
     res.status(200).json(user);
   } catch (err) {
     console.log(err);
+    res.status(500).json(err);
   }
 });
 
