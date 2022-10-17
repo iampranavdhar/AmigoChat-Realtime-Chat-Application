@@ -92,4 +92,4 @@ Show some ❤️ and 🌟 the repo to support the project
 
 ## License 🏆
 
-This repository is licensed under MIT License. Find [LICENSE](LICENSE) to know more.
+This repository is licensed under MIT License. Find [LICENSE](LICENSE) to know more
