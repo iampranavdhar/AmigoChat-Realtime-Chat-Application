@@ -4,7 +4,6 @@ import Message from '../models/Message.js'
 const router = express.Router()
 
 /* Posting a Message based on the chatroom id and senderId */
-
 router.post('/',async (req,res)=>{
     const newMessage = await new Message({
         chatroomId:req.body.chatroomId,
@@ -16,12 +15,12 @@ router.post('/',async (req,res)=>{
         res.status(200).json(savedMessage)
     }
     catch(err){
+        console.log(err)
         res.status(500).json(err)
     }
 })
 
 /* Get Messages based on the conversationId */
-
 router.get('/:chatroomId',async(req,res)=>{
     try{
         const messages = await Message.find({
@@ -30,6 +29,7 @@ router.get('/:chatroomId',async(req,res)=>{
         res.status(200).json(messages)
     }
     catch(err){
+        console.log(err)
         res.status(500).json(err)
     }
 })
